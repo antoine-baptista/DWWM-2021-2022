@@ -1,0 +1,122 @@
+/*------------------------------------------------------------*/
+/*  Antoine Baptista - 2021-2022 premier code en HTML et CSS  */
+/*------------------------------------------------------------*/
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Source Serif Pro', serif; */
+/* font-family: 'Bebas Neue', cursive; */
+/* font-family: 'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif; */
+
+*{
+    /* on enlève les margin et les padding pour
+    toute la page */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* déclaration de la hauteur du body
+    et déclaration du flex ainsi que de ses valeurs */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    /* déclaration du flex 
+    largeur du header et repositionnement de celui-ci
+    par rapport au reste du contenu --> par défaut le
+    z-index est à 0 -- mettre un élément avec un valeur
+    plus importante le met au prmier plan par rapport
+    aux autres */
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px 0px 0px;
+    padding-top: 11px;
+    width: 100%;
+    height: 83px;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+header div{
+   /*Nom du blog enfant du header 
+   on indique la largeur, la hauteur les padding 
+   on dimensionne le flex ainsi que la police sa
+   couleur et la couleur d'arrière plan */
+   font-family: 'Pacifico', cursive;
+   font-size: 18px;
+   color: rgb(13, 40, 89);
+}
+
+a{
+    /* on règle les padding (marges intérieures de l'élement {a} */
+    padding: 2px 0px 0px 14px;
+}
+
+h1{
+    /* on règle la marge extérieur haut de l'élément {h1} */
+    margin-top: 5px;
+}
+
+header img{
+    /* on règle les marges intérieures du logo dans le header */
+    padding: 11px 10px 0px 0px;
+}
+
+main p{
+    /* fixe le paragraphe en lui donnant
+    le style recherché */
+    text-align: center;
+    /* bloc conteneur initial { main } */
+    margin-top: -105vw;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 52px;
+    text-shadow: 1px 3px 1px rgb(12, 39,87);
+    color: rgb(62, 166, 193);
+}
+
+main img{
+    /* Fixe l'image en haut de la page */
+    margin-top: -124px;
+}
+
+footer{
+    /* déclaration de la largeur à 100% de la largeur de l'écran
+    et de la margin par rapport au haut du bloc conteneur initial
+    qui est  {body}   en % */
+    width: 100%;
+    margin-top: 77.5vw;
+}
+
+footer p{
+    /* mise en forme et en place du texte
+    on indique également que cet élément sera en position
+    relative */
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.63);
+    position: relative;
+
+ }
+
+footer span{
+    /* mise en forme su texte dont la balise est <span> */
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    color: rgba(13, 40, 89);
+}
+
+footer img{
+    /* règlage de la position du triangle d'habillage
+    on indique que cette iage est en position absolute par
+    rapport à la balise <p> du <footer> */
+    position: absolute;
+    margin-left: 85vw;
+    margin-top: -105px;
+    padding: 10px 6px 0px 0px;
+    z-index: 6;
+}
+
