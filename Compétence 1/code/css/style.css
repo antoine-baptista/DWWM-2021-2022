@@ -75,7 +75,9 @@ body {
 
 footer {
     /* on positionne le footer toujours en bas de page */
+    text-align: center;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.63);
     position: absolute;
     bottom: 0;
 }
@@ -88,18 +90,6 @@ main p{
     font-size: 52px;
     text-shadow: 1px 3px 1px rgb(12, 39,87);
     color: rgb(62, 166, 193);
-}
-
-footer p{
-    /* mise en forme et en place du texte
-    on indique également que cet élément sera en position
-    relative */
-    margin-bottom: 0px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.63);
-    position: relative;
 }
 
 footer span{
