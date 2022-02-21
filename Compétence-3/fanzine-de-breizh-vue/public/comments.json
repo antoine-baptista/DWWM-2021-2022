@@ -1,0 +1,222 @@
+{   
+    "time": 
+    {   "updated": "Feb 4, 2022 10:29:00 UTC", 
+        "updatedISO": "2022-02-04T10:29:00+00:00", 
+        "updateduk": "Feb 4, 2022 at 10:29 GMT" 
+    }, 
+    "disclaimer": "This data was produced from commentaires", 
+    "chartName": "Commentaires", 
+    "comments": 
+    [ 
+        { 
+        "id": 1,
+        "visitor": "Sylvie Bernard",
+		"feedback" : "Merci pour ces belles idées de virée et ces magnifiques photos. Cela fait vraiment envie. Même si nous connaissons quelques-uns de ces endroits, nous sommes encore loin du compte. La Bretagne a tellement de beaux endroits à découvrir que c’est toujours un plaisir de lire des articles qui lui rendent si bien hommage.",
+		"date": "2022-02-04"
+        },
+        {  
+        "id": 2,
+        "visitor": "Mitcka",
+		"feedback" : "Quel plaisir de faire ce petit tour de Bretagne côté mer … et je crois qu’à un moment donné, faudra se caler pour que tu m’emmènes faire une balade sur l’île de Bréhat ! ça semble un véritable petit paradis …",
+		"date": "2022-02-05"
+        }, 
+        { 
+        "id": 3,
+        "visitor": "Lolitz",
+		"feedback" : "La Bretagne est clairement une région trop oubliée en France qui a pourtant de si beaux paysages ! Il me tarde de retourner à Belle ile en mer 🙂",
+        "date": "2022-02-04"
+        },
+        {
+        "id": 4,
+        "visitor": "Lili",
+		"feedback" : "plein de bonnes idées ! toutes très tentantes!",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 5,
+        "visitor": "Anne",
+        "feedback" : "Il est temps de découvrir la Bretagne!",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 6,
+        "visitor": "Lili",
+        "feedback" : "Oui, il est grand temps !",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 7,
+        "visitor": "Martine Barbier",
+		"feedback" : "Que de beaux souvenirs que ces coins que tu nous indique, j’en ai reconnu de nombreux, pour y être allé encore l’été dernier. Vivement que l’on retrouve un semblant de liberté !",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 8,
+        "visitor": "Lucie",
+		"feedback" : "Le type d’article qui donne directement envie de partir en vacances en Bretagne sur plusieurs semaines pour découvrir tout ça 🙂",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 9,
+        "visitor": "Sylvie",
+		"feedback" : "Oh la la, je n’en connais qu’une (la pointe du Raz) dans toutes celles que tu proposes ! Heureusement que je viens assez régulièrement en Bretagne pour pouvoir en découvrir d’autres.",
+        "date": "2022-02-05"
+        },
+        {
+        "id": 10,
+        "visitor": "Sophie",
+		"feedback" : "Et bien, pourquoi ne pas aller en Bretagne cet été!! Cela donne envie avec ton article!",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 11,
+        "visitor": "Pif Paf",
+		"feedback" : "Cela donne envie de partir en balade 🙂 ! île de Bréhat, très grand coup de coeur pour moi. J’ai vraiment été marqué par la diversité des paysages et de la flore sur une si petite île : un bonheur !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 12,
+        "visitor": "Anne landois-Favret",
+		"feedback" : "Je n’ai jamais fait aucun de ses coins, pourtant mes grands-parents étaient de Carnac ! Comme ça fait quelques années que j’ai très envie de retourner en Bretagne, je me garde ton article sous le coude ! 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 13,
+        "visitor": "Estelle",
+		"feedback" : "Que de belles balades. Je n’aijamais mis les pieds en Bretagne, autant te dire qu’un futur programme là bas sera très chargé. Très étonnant le sillon de Talbert.",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 14,
+        "visitor": "Cécile",
+		"feedback" : "Un chouette florilège impossible de ne pas y trouver son bonheur 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 15,
+        "visitor": "Tania",
+		"feedback" : "ah la Bretagne…. Tu me donnes des idées supplémentaires pour de prochaines visites dans mon coin préféré de france",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 16,
+        "visitor": "Fox and Fire",
+		"feedback" : "Que la Bretagne est belle ! Je ne connaissais pas du tout ce coin, mais quel plaisir de le découvrir en photos !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 17,
+        "visitor": "Trotteurs-addict",
+		"feedback" : "Oui ce fut une belle découverte. Nous sommes tombés sous le charme 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 18,
+        "visitor": "Lady Milonguera",
+		"feedback" : "Le coin est absolument charmant…",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 19,
+        "visitor": "Une ancre à l'Ouest",
+		"feedback" : "Merci pour ce très bel article ! 🙂 La France regorge de magnifiques endroits, nous avons énormément de chance de vivre en France, l’un des plus beaux pays au monde ! Merci de faire vivre le tourisme français grâce à vos articles ! 😉",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 20,
+        "visitor": "Emma",
+		"feedback" : "Les photos sont magnifiques, ça donne envie ! Baume-les-messieurs doit être top à cette période de l’année 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 21,
+        "visitor": "Les petits pas de Juls",
+		"feedback" : "Décidément, je n’ai pas besoin d’y réfléchir! Il me suffit de prendre un peu d’inspiration chez les uns et chez les autres, et j’ai largement de quoi faire pour m’occuper cet été et par la suite! Merci pour les balades et les recommandations! Bons chemins!",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 22,
+        "visitor": "Argone",
+		"feedback" : "merci pour toutes ces idées, pour nous ce sera l’Aveyron cette année, mais je rêve aussi d’aller dans le Finistère … (j’ai vu que vous aviez un article sur ce département breton d’ailleurs !) .",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 23,
+        "visitor": "Marie",
+		"feedback" : "Ah, la Bretagne ! J’y suis passée il y a quelques années maintenant et j’ai adoré ! Super cet article bourré de bons conseils pour le jour où je reviendrai !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 24,
+        "visitor": "Clémentine",
+		"feedback" : "Rolala, je savais bien qu’à peine un œil posé sur vos article bretons me donnerait envie de parcourir cette belle région. Et toujours ces bonnes adresses que vous nous partagez, j’adore!",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 25,
+        "visitor": "Notre monde à deux",
+		"feedback" : "Merci pour cet article ! Habitant dans la région, il faudra qu’on aille y faire un petit tour ! 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 26,
+        "visitor": "c'era/itenarasa",
+		"feedback" : "Merci pour cette bien jolie piste de découverte d’un nouveau sublime coin de Bretagne. Super article que je m’empresse de mettre en favori pour mon prochain séjour breton 🙂",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 27,
+        "visitor": "Amoureux du Monde",
+		"feedback" : "Ah les paysages de la Bretagne ! On a hâte de les découvrir à la fin du mois 💙",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 28,
+        "visitor": "Kikimagtravel",
+		"feedback" : "Je ne connaissais pas du tout cet endroit et c’est vraiment sublime! Vos photos et votre récit donnent très envie d’y venir !!! D’ailleurs là tout de suite j’ai qu’une envie c’est d’aller à la crêperie de mademoiselle breizh !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 29,
+        "visitor": "Marieke (les 3M)",
+		"feedback" : "Wahou c’est tout à fait l’image que j’ai de la Bretagne (et je ne parle pas des crêpes 😅). Ces roches, ces vestiges de pierres et ces couleurs 🤩",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 30,
+        "visitor": "easyvacs",
+		"feedback" : "Merci de nous faire voyager comme vous le faites ! Bonne continuation",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 31,
+        "visitor": "Alexandra",
+		"feedback" : "Une liste magnifique que je note précieusement car je viens ENFIN cet été ! Youpi !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 32,
+        "visitor": "Corine DUBASQUE",
+		"feedback" : "Magnifique reportage , il y a tant de belles choses à découvrir. Nous y retournons en MAI pour une semaine dans le Finistère Sud, nous avons vraiment hâte. Cordialement Corine",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 33,
+        "visitor": "Alexandra (On Holidays Again)",
+		"feedback" : "Le seul endroit qu’on n’a pas encore vu voir c’est Belle-Ile. Ca a l’air sublime ! Vivement qu’on puisse revenir !",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 34,
+        "visitor": "InesOnLine",
+		"feedback" : "joli article, très inspirant…je ne connais pas du tout la cote de granit de rose mais c’est un endroit que nous rêvons de découvrir… Coup de coeur également pour Beg meil . Tu connais les Glénans?",
+        "date": "2022-02-05"
+        }, 
+        {
+        "id": 35,
+        "visitor": "Marieke (Les 3M)",
+		"feedback" : "Magnifique côte. On voit souvent ces images de la Bretagne, mais ça reste toujours aussi beau à regarder. Et j’aime beaucoup aussi l’ambiance des marais.",
+        "date": "2022-02-05"
+        }
+    ]
+}
