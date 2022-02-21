@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/* TEST -- TEST -- TEST -- TEST -- TEST */
+/*------------------------------------------------------------*/
+/*         Antoine Baptista - 2021-2022 Compétence 3          */
+/*  Projet fil rouge - Fanzine de Breizh déployé sur Vue.JS   */
+/*                                                            */
+/*------------------------------------------------------------*/
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Source Serif Pro', serif; */
+/* font-family: 'Bebas Neue', cursive; */
+/* font-family: 'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif; */
+/* définition des variables sass */
+/* Les couleurs */
+/* La gestion des différentes polices */
+/* la typographie */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* les hamburgers ne s'affichent plus*/
+#mcdo {
+  visibility: visible;
+}
+
+.home, .rechercher, .copyright,
+.connexion, .about-me, .contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.a-propos {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+#homeindex, #rechercherindex, #copyrightindex,
+#connexionindex, #contactindex {
+  /* déclaration des variables pour toutes les sections 'homeindex'*/
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#a-proposindex {
+  height: 850px;
+}
+
+#homeindex img, #a-proposindex img, #rechercherindex img, #copyrightindex img,
+#connexionindex img, #about-meindex img, #contactindex img, #menuindex img {
+  /* positionnement du triangle toujours en bas de page et à droite
+    le z-index est modifié afin qu'il se positionne au dessus du footer */
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.entete-de-page {
+  /* déclaration du flex 
+    largeur du header et repositionnement de celui-ci
+    par rapport au reste du contenu --> par défaut le
+    z-index est à 0 -- mettre un élément avec un valeur
+    plus importante le met au prmier plan par rapport
+    aux autres */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px 0px 0px 0px;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.entete-de-page .nom-blog {
+  /*Nom du blog enfant du header 
+    on indique la largeur, la hauteur les padding 
+    on dimensionne le flex ainsi que la police sa
+    couleur et la couleur d'arrière plan */
+  font-family: "Pacifico", cursive;
+  font-size: 15px;
+  color: #0d2859;
+  margin-top: 10px;
+}
+
+.entete-de-page a {
+  /* on règle les padding (marges intérieures de l'élement {a} */
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.hermine {
+  /* on règle la marge haute de l'Hermine dans le header */
+  padding: 0px 16px 0px 0px;
+  margin-top: 10px;
+}
+
+h2 {
+  /* on donne un positionnement à tous les 'h2' */
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-left: 20px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 24px;
+  text-shadow: 1px 3px 1px #3da6c1;
+  color: #0d2859;
+}
+
+#sectionabout-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#prez-me {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  max-height: 290px;
+  width: calc(100vw - 30px);
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+#prez-me p {
+  /*  */
+  margin: 0px 0px 10px 0px;
+}
+
+#prez-texte {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 400px;
+  width: calc(100vw - 30px);
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+#prez-texte p {
+  /*  */
+  margin: 0px 0px 10px 0px;
+}
+
+.iframe_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 42px;
+}
+
+.iframe_container iframe {
+  margin: 20px 0px 0px 10px;
+  width: 400px;
+  height: 234px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tous-les-reseaux img {
+  /* dimension des images pour les réseaux sociaux */
+  width: 30px;
+  height: 30px;
+}
+
+#tous-les-reseaux {
+  /* positionnement des icones d'accès aux réseaux
+    sociaux .. on met le z-index à 2 car l'habillage 'triangle'
+    possède déjà le z-index 1 */
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+#tous-les-reseaux a:nth-child(1) {
+  /* on affecte un padding gauche sur le premier icone des réseaux
+    afin de ne pas chevaucher le triangle*/
+  padding-left: 75px;
+}
+
+#tous-les-reseaux a:nth-child(5) {
+  /* on affecte un padding droit sur le dernier icone des réseaux
+    afin de ne pas chevaucher le triangle*/
+  padding-right: 75px;
+}
+
+.pied-de-page {
+  /* on positionne le footer toujours en bas de page */
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.63);
+  position: fixed;
+  height: 1.9em;
+  bottom: 0;
+}
+
+.pied-de-page p {
+  margin: 0;
+}
+
+.pied-de-page span {
+  /* mise en forme su texte dont la balise est <span> */
+  font-family: "Pacifico", cursive;
+  font-size: 10px;
+  color: #0d2859;
+}
+
+/* Média queries
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   premier point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 700px et au maximum 913px */
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  #prez-me p {
+    /*  */
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   premier point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 700px et au maximum 913px */
+@media screen and (min-width: 700px) and (max-width: 913px) {
+  /* les hamburgers ne s'affichent plus*/
+  #mcdo {
+    visibility: hidden;
+  }
+  .entete-de-page .nom-blog {
+    /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+    font-family: "Pacifico", cursive;
+    font-size: 15px;
+    color: #0d2859;
+  }
+  .hermine {
+    /* on règle la marge haute de l'Hermine dans le header */
+    padding: 0px 16px 0px 0px;
+    margin-top: 11px;
+  }
+  #prez-me, #prez-texte {
+    width: calc(100vw - 30px);
+    max-height: 290px;
+  }
+  #prez-me p {
+    /*  */
+    margin: 0px 0px 20px 0px;
+  }
+  .iframe_container {
+    padding-bottom: 28px;
+  }
+  #tous-les-reseaux img {
+    /* dimension des images pour les réseaux sociaux */
+    width: 35px;
+    height: 35px;
+  }
+  #tous-les-reseaux {
+    /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+    margin-bottom: 30px;
+  }
+  .pied-de-page {
+    /* on positionne le footer toujours en bas de page */
+    font-size: 13px;
+    width: 100%;
+    height: 1.9em;
+  }
+  .pied-de-page span {
+    /* mise en forme su texte dont la balise est <span> */
+    font-size: 13px;
+  }
+}
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   second point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 914px et au maximum 1249px */
+@media screen and (min-width: 914px) and (max-width: 1249px) {
+  /* les hamburgers ne s'affichent plus*/
+  #mcdo {
+    visibility: hidden;
+  }
+  .entete-de-page .nom-blog {
+    /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+    color: #0d2859;
+  }
+  .hermine {
+    /* on règle la marge haute de l'Hermine dans le header */
+    padding: 0px 16px 0px 0px;
+    margin-top: 13px;
+  }
+  #prez-me {
+    max-height: 230px;
+  }
+  #prez-texte {
+    max-height: 250px;
+  }
+  .iframe_container {
+    padding-bottom: 88px;
+  }
+  #tous-les-reseaux img {
+    /* dimension des images pour les réseaux sociaux */
+    width: 40px;
+    height: 40px;
+  }
+  #tous-les-reseaux {
+    /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+    margin-bottom: 30px;
+  }
+  .pied-de-page {
+    /* on positionne le footer toujours en bas de page */
+    font-size: 13px;
+    width: 100%;
+    height: 1.9em;
+  }
+  .pied-de-page span {
+    /* mise en forme su texte dont la balise est <span> */
+    font-size: 13px;
+  }
+}
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   troisième point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 1250px */
+@media screen and (min-width: 1250px) {
+  /* les hamburgers ne s'affichent plus*/
+  #mcdo {
+    visibility: hidden;
+  }
+  .entete-de-page .nom-blog {
+    /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+    color: #0d2859;
+  }
+  .hermine {
+    /* on règle la marge haute de l'Hermine dans le header */
+    padding: 0px 16px 0px 0px;
+    margin-top: 13px;
+  }
+  #prez-me {
+    width: calc(60vw - 30px);
+    max-height: 290px;
+  }
+  #prez-me p {
+    /*  */
+    margin: 0px 0px 12px 0px;
+  }
+  #prez-texte {
+    max-height: 250px;
+  }
+  #babou {
+    margin-top: -80px;
+  }
+  .iframe_container {
+    padding-bottom: 331px;
+  }
+  .iframe_container iframe {
+    margin: 20px 0px 0px 10px;
+    width: 495px;
+    height: 290px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #tous-les-reseaux img {
+    /* dimension des images pour les réseaux sociaux */
+    width: 50px;
+    height: 50px;
+  }
+  #tous-les-reseaux {
+    /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+    margin-bottom: 35px;
+  }
+  .pied-de-page {
+    /* on positionne le footer toujours en bas de page */
+    font-size: 16px;
+    width: 100%;
+    height: 1.9em;
+  }
+  .pied-de-page span {
+    /* mise en forme su texte dont la balise est <span> */
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
