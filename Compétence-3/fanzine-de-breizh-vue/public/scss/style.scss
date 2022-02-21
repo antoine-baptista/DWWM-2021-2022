@@ -1,0 +1,502 @@
+/* TEST -- TEST -- TEST -- TEST -- TEST */
+// Ligne de test initiale pour tester les paramètres de l'extension Live Sass Compiler
+//
+// █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+//
+/*------------------------------------------------------------*/
+/*         Antoine Baptista - 2021-2022 Compétence 3          */
+/*  Projet fil rouge - Fanzine de Breizh déployé sur Vue.JS   */
+/*                                                            */
+/*------------------------------------------------------------*/
+// déclaration initiale des variables
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Source Serif Pro', serif; */
+/* font-family: 'Bebas Neue', cursive; */
+/* font-family: 'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif; */
+//
+/* définition des variables sass */
+/* Les couleurs */
+$color-jaune-vert: rgb(186,199,0);
+$color-rose: rgb(213,0,80);
+$color-cyan: rgb(61,166,193);
+$color-cyan-bleu: rgb(13,40,89);
+$color-black: rgb(0,0,0);
+$color-white: rgb(255,255,255);
+$color-background: rgba(255, 255, 255, 0.63);
+
+/* La gestion des différentes polices */
+/* la typographie */
+$header-font: 'Pacifico', cursive;
+$title-font: 'Source Serif Pro', serif;
+$blog-font: 'Bebas Neue', cursive;
+$body-font: 'Trebuchet MS','Lucida Grande','Lucida Sans Unicode','Lucida Sans',Tahoma,sans-serif;
+
+// on enlève les marges pour toutes les pages
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+/* les hamburgers ne s'affichent plus*/
+#mcdo {
+    visibility: visible;
+    }
+
+// page Home (page d'accueil)
+.home, .rechercher, .copyright,
+.connexion, .about-me, .contact{
+    // 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
+
+.a-propos{
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#homeindex, #rechercherindex, #copyrightindex,
+#connexionindex, #contactindex {
+    /* déclaration des variables pour toutes les sections 'homeindex'*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
+#a-proposindex{
+    height: 850px;
+}
+    
+#homeindex img, #a-proposindex img, #rechercherindex img, #copyrightindex img,
+#connexionindex img, #about-meindex img, #contactindex img, #menuindex img {
+    /* positionnement du triangle toujours en bas de page et à droite
+    le z-index est modifié afin qu'il se positionne au dessus du footer */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    }
+
+.entete-de-page{
+    /* déclaration du flex 
+    largeur du header et repositionnement de celui-ci
+    par rapport au reste du contenu --> par défaut le
+    z-index est à 0 -- mettre un élément avec un valeur
+    plus importante le met au prmier plan par rapport
+    aux autres */
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 0px 0px;
+    width: 100vw;
+    background-color: $color-background;
+    }
+      
+.entete-de-page .nom-blog{
+    /*Nom du blog enfant du header 
+    on indique la largeur, la hauteur les padding 
+    on dimensionne le flex ainsi que la police sa
+    couleur et la couleur d'arrière plan */
+    font-family: $header-font;
+    font-size: 15px;
+    color: $color-cyan-bleu;
+    margin-top: 10px;
+    }
+    
+.entete-de-page a{
+    /* on règle les padding (marges intérieures de l'élement {a} */
+    //padding: 0px 0px 14px 0px;
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 50px;
+    }
+    
+// .nom-blog h1{
+//     /* on règle la marge extérieure haut de l'élément {h1} */
+//     margin-top: 5px;
+//     }
+    
+// .entete-de-page img{
+//     /* on règle les marges intérieures des images dans le header */
+//     padding: 5px 0px 4px 0px;
+//     margin-top: 8px;
+//     }
+    
+.hermine{
+    /* on règle la marge haute de l'Hermine dans le header */
+    padding: 0px 16px 0px 0px;
+    margin-top: 10px;
+    }
+
+h2 {
+    /* on donne un positionnement à tous les 'h2' */
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-left: 20px;
+    font-family: $title-font;
+    font-size: 24px;
+    text-shadow: 1px 3px 1px $color-cyan;
+    color: $color-cyan-bleu;
+    }
+
+#sectionabout-me {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-left: 10px;
+    justify-content: center;
+    }
+
+#prez-me {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    max-height: 290px;
+    width: calc(100vw - 30px);
+    font-family: $body-font;
+    font-size: 14px;
+    background-color: $color-background;
+    }
+
+#prez-me p {
+    /*  */
+    margin: 0px 0px 10px 0px;
+    }
+
+#prez-texte {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    // height: 100%;
+    max-height: 400px;
+    width: calc(100vw - 30px);
+    font-family: $body-font;
+    font-size: 14px;
+    background-color: $color-background;
+    }
+    
+#prez-texte p {
+    /*  */
+    margin: 0px 0px 10px 0px;
+    }
+
+.iframe_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 42px;
+    }
+
+.iframe_container iframe {   
+    margin: 20px 0px 0px 10px;
+    width: 400px;
+    height: 234px;
+    justify-content: center;
+    }
+
+#tous-les-reseaux img {
+    /* dimension des images pour les réseaux sociaux */
+    width: 30px;
+    height: 30px;
+    }
+    
+#tous-les-reseaux {
+    /* positionnement des icones d'accès aux réseaux
+    sociaux .. on met le z-index à 2 car l'habillage 'triangle'
+    possède déjà le z-index 1 */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // margin-top: 25px;
+    margin-bottom: 20px;
+    z-index: 2;
+    }
+    
+#tous-les-reseaux a:nth-child(1){
+    /* on affecte un padding gauche sur le premier icone des réseaux
+    afin de ne pas chevaucher le triangle*/
+    padding-left: 75px;
+    }
+    
+#tous-les-reseaux a:nth-child(5){
+    /* on affecte un padding droit sur le dernier icone des réseaux
+    afin de ne pas chevaucher le triangle*/
+    padding-right: 75px;
+    }
+
+.pied-de-page {
+    /* on positionne le footer toujours en bas de page */
+    font-family: $body-font;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: $color-background;
+    position: fixed;
+    height: 1.9em;
+    bottom: 0;
+    }
+    
+.pied-de-page p{
+    // on supprime les marges
+    margin: 0;
+    }
+    
+.pied-de-page span{
+    /* mise en forme su texte dont la balise est <span> */
+    font-family: $header-font;
+    font-size: 10px;
+    color: $color-cyan-bleu;
+    }
+
+/* Média queries
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   premier point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 700px et au maximum 913px */
+   @media screen and (min-width: 500px) and (max-width: 699px)
+   {
+
+    #prez-me p {
+        /*  */
+        margin: 0px 0px 15px 0px;
+        }
+
+}
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   premier point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 700px et au maximum 913px */
+   @media screen and (min-width: 700px) and (max-width: 913px)
+   {
+
+    /* les hamburgers ne s'affichent plus*/
+    #mcdo {
+        visibility: hidden;
+        }
+
+    .entete-de-page .nom-blog{
+        /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+        font-family: $header-font;
+        font-size: 15px;
+        color: $color-cyan-bleu;
+        }
+    
+    // .nom-blog h1{
+    //     /* on règle la marge extérieure haut de l'élément {h1} */
+    //     margin-top: 2px;
+    //     }
+
+    .hermine{
+        /* on règle la marge haute de l'Hermine dans le header */
+        padding: 0px 16px 0px 0px;
+        margin-top: 11px;
+        }
+    
+    #prez-me, #prez-texte {
+        width: calc(100vw - 30px);
+        max-height: 290px;
+        }
+    
+    #prez-me p {
+        /*  */
+        margin: 0px 0px 20px 0px;
+        }
+
+    .iframe_container{
+        padding-bottom: 28px;
+        }
+
+    #tous-les-reseaux img {
+        /* dimension des images pour les réseaux sociaux */
+        width: 35px;
+        height: 35px;
+        }
+
+    #tous-les-reseaux {
+        /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+        margin-bottom: 30px;
+        }
+
+    .pied-de-page {
+        /* on positionne le footer toujours en bas de page */
+        font-size: 13px;
+        width: 100%;
+        height: 1.9em;
+        }
+    
+    .pied-de-page span{
+        /* mise en forme su texte dont la balise est <span> */
+        font-size: 13px;
+        }
+
+   }
+
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   second point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 914px et au maximum 1249px */
+   @media screen and (min-width: 914px) and (max-width: 1249px)
+   {
+
+    /* les hamburgers ne s'affichent plus*/
+    #mcdo {
+        visibility: hidden;
+        }
+
+    .entete-de-page .nom-blog{
+        /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+        font-family: $header-font;
+        font-size: 18px;
+        color: $color-cyan-bleu;
+        }
+    
+    // .nom-blog h1{
+    //   //  on règle la marge extérieure haut de l'élément {h1}
+    //     margin-top: 2px;
+    //     }
+    
+    .hermine{
+        /* on règle la marge haute de l'Hermine dans le header */
+        padding: 0px 16px 0px 0px;
+        margin-top: 13px;
+        }
+
+    #prez-me {
+        max-height: 230px;
+        }
+
+    #prez-texte {
+        max-height: 250px;
+        }        
+
+    .iframe_container{
+        padding-bottom: 88px;
+        }
+
+    #tous-les-reseaux img {
+        /* dimension des images pour les réseaux sociaux */
+        width: 40px;
+        height: 40px;
+        }
+
+    #tous-les-reseaux {
+        /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+        margin-bottom: 30px;
+        }
+
+    .pied-de-page {
+        /* on positionne le footer toujours en bas de page */
+        font-size: 13px;
+        width: 100%;
+        height: 1.9em;
+        }
+    
+    .pied-de-page span{
+        /* mise en forme su texte dont la balise est <span> */
+        font-size: 13px;
+        }
+
+   }
+
+/* ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+   troisième point de rupture
+   Sur uniquement les écrans, quand la largeur de la fenêtre fait au minimum 1250px */
+   @media screen and (min-width: 1250px)
+   {
+    
+    /* les hamburgers ne s'affichent plus*/
+    #mcdo {
+        visibility: hidden;
+    }
+    
+    .entete-de-page .nom-blog{
+        /*Nom du blog enfant du header 
+        on indique la largeur, la hauteur les padding 
+        on dimensionne le flex ainsi que la police sa
+        couleur et la couleur d'arrière plan */
+        font-family: $header-font;
+        font-size: 18px;
+        color: $color-cyan-bleu;
+        }
+    
+    // .nom-blog h1{
+    //     // on règle la marge extérieure haut de l'élément {h1}
+    //     margin-top: 2px;
+    //     }
+
+    .hermine{
+        /* on règle la marge haute de l'Hermine dans le header */
+        padding: 0px 16px 0px 0px;
+        margin-top: 13px;
+        }
+
+    #prez-me {
+        width: calc(60vw - 30px);
+        max-height: 290px;
+        }        
+        
+    #prez-me p {
+        /*  */
+        margin: 0px 0px 12px 0px;
+        }
+
+    #prez-texte {
+        max-height: 250px;
+        } 
+
+    #babou{
+        margin-top: -80px;
+        }
+
+    .iframe_container{
+        padding-bottom: 331px;
+        }
+        
+    .iframe_container iframe {   
+        margin: 20px 0px 0px 10px;
+        width: 495px;
+        height: 290px;
+        justify-content: center;
+        }
+        
+    #tous-les-reseaux img {
+        /* dimension des images pour les réseaux sociaux */
+        width: 50px;
+        height: 50px;
+        }
+
+    #tous-les-reseaux {
+        /* positionnement des icones d'accès aux réseaux
+        sociaux .. on met les relève un petit peu */
+        margin-bottom: 35px;
+        }
+
+    .pied-de-page {
+        /* on positionne le footer toujours en bas de page */
+        font-size: 16px;
+        width: 100%;
+        height: 1.9em;
+        }
+    
+    .pied-de-page span{
+        /* mise en forme su texte dont la balise est <span> */
+        font-size: 16px;
+        }
+
+   }
+    
